@@ -126,6 +126,76 @@ ol span{color:#3a3a44}
 .ct .btn.ghost:hover{box-shadow:3px 3px 0 #fff}
 .ct small{display:block;margin-top:60px;opacity:.85}
 
+
+/* reserve */
+.rsv{background:#fff}
+.rg{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:start}
+.fcard{background:#f6f2ff;border-radius:40px;padding:40px}
+.fs{margin-bottom:38px}
+.fh{display:flex;align-items:center;gap:12px;font-size:1.55rem;margin-bottom:20px}
+.fh i{font-style:normal;display:grid;place-items:center;flex:none;width:38px;height:38px;border-radius:50%;background:var(--ink);color:#fff;font:400 1rem var(--d)}
+.fld{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.f.full{grid-column:1/-1}
+.f>label,.f>.lb{font-weight:700;font-size:.9rem}
+.f input,.f select{font:500 1rem var(--b);padding:.8em 1em;border-radius:16px;border:2px solid #0d0d1022;background:#fff;color:var(--ink);width:100%;transition:box-shadow .2s,border-color .2s}
+.f input:focus,.f select:focus{outline:none;border-color:var(--ink);box-shadow:3px 3px 0 var(--or)}
+.f input:user-invalid,.f select:user-invalid{border-color:#e5261f}
+.f small{color:#5a5a66;font-size:.82rem}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.opt{position:relative;cursor:pointer;display:block}
+.opt input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.oc{position:relative;display:flex;flex-direction:column;gap:2px;height:100%;padding:16px 46px 16px 18px;border-radius:20px;background:#fff;border:2px solid #0d0d1022;transition:transform .2s,box-shadow .2s,border-color .2s,background .2s}
+.oc b{font-size:1.05rem}
+.oc small{color:#5a5a66;font-size:.88rem}
+.oc em{font-style:normal;font-weight:800;color:var(--or);margin-top:6px;min-height:1.4em}
+.oc::after{content:"";position:absolute;top:16px;right:16px;width:22px;height:22px;border-radius:50%;border:2px solid #0d0d1030;transition:.2s}
+.opt:hover .oc{transform:translate(-2px,-2px)}
+.opt input:checked+.oc{border-color:var(--or);background:#fff1ec;box-shadow:3px 3px 0 var(--or)}
+.opt input:checked+.oc::after{border-color:var(--or);background:var(--or) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M2 5.2l2 2L8 3' stroke='%23fff' stroke-width='1.6' fill='none'/%3E%3C/svg%3E")}
+.opt input:focus-visible+.oc{outline:3px solid var(--vio);outline-offset:3px}
+.subl{font-weight:700;font-size:.9rem;margin:22px 0 8px}
+.agree{display:flex;gap:12px;align-items:flex-start;font-weight:500;cursor:pointer}
+.agree input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--or)}
+.rules{margin:0 0 16px;background:#fff;border-radius:20px;border:2px solid #0d0d1022}
+.rules summary{cursor:pointer;font-weight:700;padding:14px 18px}
+.rules div{padding:0 18px 16px;display:grid;gap:8px;font-size:.95rem;color:#2b2b33}
+.err{color:#c8190f;font-weight:600;margin-top:14px;min-height:1.4em}
+.go{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:8px}
+.go .btn{font-size:1.1rem;padding:1em 1.7em}
+.go .btn[disabled]{opacity:.6;cursor:wait;transform:none;box-shadow:none}
+.go small{color:#5a5a66;max-width:30ch}
+.sum{position:sticky;top:88px;border-radius:34px;padding:28px;color:#fff;background:linear-gradient(var(--ink),var(--ink)) padding-box,var(--led) border-box;border:2px solid transparent}
+.sum h3{font-size:1.7rem;margin-bottom:14px}
+.sum .row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px dashed #ffffff30;color:#c9c9d6}
+.sum .row b{color:#fff;text-align:right}
+.sum .due{margin:14px 0 6px;padding:18px 20px;border-radius:22px;background:#ffffff12}
+.sum .due span{display:block;font-weight:700;color:var(--or);font-size:.9rem}
+.sum .due strong{display:block;font:400 2.3rem var(--d);line-height:1.1;margin-top:4px}
+.sum .due small{display:block;color:#b9b9c6;margin-top:6px}
+.sum h4{font:800 .95rem var(--b);margin:22px 0 4px}
+.sum p.n{color:#b9b9c6;font-size:.9rem}
+.pay{display:grid;gap:10px;margin-top:12px}
+.pay div{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#ffffff10;border-radius:16px;padding:12px 14px}
+.pay strong{display:block}
+.pay span{color:#b9b9c6;font-size:.9rem}
+.copy{flex:none;font:700 .8rem var(--b);background:#fff;color:var(--ink);border:0;border-radius:99px;padding:.5em 1em;cursor:pointer}
+.sum ul{list-style:none;margin-top:8px;display:grid;gap:6px;color:#e6e6ee;font-size:.93rem}
+.sum li{display:flex;gap:10px}
+.sum li::before{content:"";flex:none;width:.85em;height:.85em;margin-top:.35em;border-radius:50%;background:var(--or) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M2 5.2l2 2L8 3' stroke='%23fff' stroke-width='1.6' fill='none'/%3E%3C/svg%3E")}
+.done{text-align:left}
+.done h3{font-size:clamp(2rem,4.5vw,3rem);margin:8px 0 12px}
+.done .refb{display:inline-block;background:var(--ink);color:#fff;font-weight:700;padding:.35em 1em;border-radius:99px}
+.done ol{margin-top:22px}
+.done .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+@media(max-width:860px){
+ .rg{grid-template-columns:1fr}
+ .sum{position:static}
+ .fcard{padding:24px;border-radius:32px}
+ .fld{grid-template-columns:1fr}
+}
+@media(max-width:480px){.opts{grid-template-columns:1fr}}
+
 @media(max-width:860px){
  nav a:not(.btn){display:none}
  .hero .wrap,.how .wrap,.cards{grid-template-columns:1fr}
@@ -149,7 +219,8 @@ ol span{color:#3a3a44}
       <a href="#kit">What you get</a>
       <a href="#sets">Sets</a>
       <a href="#book">How to book</a>
-      <a class="btn or" href="tel:09077741399">Call now</a>
+      <a href="tel:09077741399">Call now</a>
+      <a class="btn or" href="#reserve">Reserve online</a>
     </nav>
   </div>
 </header>
@@ -164,7 +235,7 @@ ol span{color:#3a3a44}
       <p class="sub">A JBL PartyBox 520 with mics, a big screen, karaoke and lights. Available now in Virac, Catanduanes.</p>
       <div class="cta">
         <a class="btn or" href="#sets">See the sets</a>
-        <a class="btn ghost" href="https://web.facebook.com/lindsey.araojo.12" target="_blank" rel="noopener">Book a date</a>
+        <a class="btn ghost" href="#reserve">Book a date</a>
       </div>
     </div>
     <div class="stage" id="stage">
@@ -262,9 +333,106 @@ ol span{color:#3a3a44}
       <h2>Booking takes<br>three steps</h2>
       <ol>
         <li><div><strong>Pick a set</strong><span>Basic or Plus, half day or whole day.</span></div></li>
-        <li><div><strong>Send your date and venue</strong><span>Call, email or message us on Facebook.</span></div></li>
+        <li><div><strong>Fill in the form and pay half</strong><span>Your agreement downloads as a PDF. Send the deposit to lock your date.</span></div></li>
         <li><div><strong>We confirm, you party</strong><span>We lock your date and get the gear ready.</span></div></li>
       </ol>
+    </div>
+  </div>
+</section>
+
+<section class="rsv" id="reserve">
+  <div class="wrap">
+    <div class="head">
+      <h2>Reserve<br>your date</h2>
+      <p>Fill in the form, pay half to lock your date, and your rental agreement downloads as a PDF with all your details on it.</p>
+    </div>
+    <div class="rg">
+      <div class="fcard" id="fcard">
+        <form id="rform" autocomplete="on">
+          <div class="fs">
+            <h3 class="fh"><i>1</i>Who's renting?</h3>
+            <div class="fld">
+              <div class="f"><label for="f-name">Renter name</label><input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Juan Dela Cruz"></div>
+              <div class="f"><label for="f-phone">Contact no.</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required minlength="7" placeholder="09XX XXX XXXX"></div>
+              <div class="f full"><label for="f-addr">Address / Facebook</label><input id="f-addr" name="address" type="text" autocomplete="street-address" required placeholder="Home address or your Facebook name / link"></div>
+              <div class="f"><label for="f-idt">Valid ID type</label>
+                <select id="f-idt" name="idType" required>
+                  <option value="">Choose an ID</option><option>Driver's License</option><option>National ID (PhilSys)</option><option>Passport</option><option>UMID</option><option>SSS ID</option><option>PhilHealth ID</option><option>Postal ID</option><option>Voter's ID</option><option>PRC ID</option><option>School ID</option><option>Other</option>
+                </select></div>
+              <div class="f"><label for="f-idn">ID number</label><input id="f-idn" name="idNo" type="text" required placeholder="ID number"></div>
+            </div>
+          </div>
+
+          <div class="fs">
+            <h3 class="fh"><i>2</i>Tell us about the event</h3>
+            <div class="fld">
+              <div class="f"><label for="f-ev">Event</label><input id="f-ev" name="event" type="text" required placeholder="Birthday, wedding, reunion…"></div>
+              <div class="f"><label for="f-evd">Event date</label><input id="f-evd" name="eventDate" type="date" required></div>
+              <div class="f full"><label for="f-ven">Venue</label><input id="f-ven" name="venue" type="text" required placeholder="Where will the gear be used?"><small>The gear may only be used at this venue.</small></div>
+              <div class="f full"><span class="lb" id="lb-mode">Delivery / pick-up</span>
+                <div class="opts" role="radiogroup" aria-labelledby="lb-mode">
+                  <label class="opt"><input type="radio" name="mode" value="Delivery" required><span class="oc"><b>Delivery</b><small>We bring it to your venue</small></span></label>
+                  <label class="opt"><input type="radio" name="mode" value="Pick-up"><span class="oc"><b>Pick-up</b><small>You pick it up in Virac</small></span></label>
+                </div></div>
+              <div class="f"><label for="f-st">Delivery / pick-up date &amp; time</label><input id="f-st" name="start" type="datetime-local" required></div>
+              <div class="f"><label for="f-rt">Return date &amp; time</label><input id="f-rt" name="ret" type="datetime-local" required><small>Filled in for you from your rental length. Change it if needed.</small></div>
+            </div>
+          </div>
+
+          <div class="fs">
+            <h3 class="fh"><i>3</i>Pick your set</h3>
+            <div class="opts" role="radiogroup" aria-label="Set">
+              <label class="opt"><input type="radio" name="set" value="basic" required><span class="oc"><b>JBL Basic</b><small>Speaker, 1 mic, stand</small><em data-ps="basic"></em></span></label>
+              <label class="opt"><input type="radio" name="set" value="plus"><span class="oc"><b>JBL Plus</b><small>Full setup: speaker, 2 mics, TV, karaoke, YouTube, spotlight</small><em data-ps="plus"></em></span></label>
+            </div>
+            <p class="subl">How long?</p>
+            <div class="opts" role="radiogroup" aria-label="Length">
+              <label class="opt"><input type="radio" name="len" value="half" required><span class="oc"><b>Half day</b><small>12 hours</small></span></label>
+              <label class="opt"><input type="radio" name="len" value="whole"><span class="oc"><b>Whole day</b><small>24 hours</small></span></label>
+            </div>
+          </div>
+
+          <div class="fs" style="margin-bottom:0">
+            <h3 class="fh"><i>4</i>Almost done</h3>
+            <details class="rules"><summary>Read the rental rules</summary><div id="rulesList"></div></details>
+            <label class="agree"><input type="checkbox" name="agree" required><span>I have read the rental rules and I agree to them.</span></label>
+            <p class="err" id="ferr" role="alert"></p>
+            <div class="go">
+              <button class="btn or" id="fgo" type="submit"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-5-5m5 5l5-5M5 20h14"/></svg><span>Get my agreement (PDF)</span></button>
+              <small>Your PDF downloads right away. Print it, sign it, and bring it on the day.</small>
+            </div>
+          </div>
+        </form>
+
+        <div class="done" id="done" hidden>
+          <span class="refb" id="doneRef"></span>
+          <h3>Agreement downloaded!</h3>
+          <p>Your date is <strong>not locked yet</strong>. It's locked once we receive your reservation fee.</p>
+          <ol>
+            <li><div><strong>Send your deposit</strong><span>Use the payment details on this page.</span></div></li>
+            <li><div><strong>Send us the proof</strong><span>Message us a screenshot of your payment and your PDF.</span></div></li>
+            <li><div><strong>We confirm your date</strong><span>Sign the agreement when the gear is handed over.</span></div></li>
+          </ol>
+          <div class="acts">
+            <button class="btn or" id="again" type="button">Download PDF again</button>
+            <a class="btn ghost" id="fbLink" href="https://web.facebook.com/lindsey.araojo.12" target="_blank" rel="noopener">Message us on Facebook</a>
+            <a class="btn ghost" id="mailLink" href="mailto:jblmcrental@gmail.com">Email us</a>
+            <button class="btn ghost" id="edit" type="button">Edit my details</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="sum" aria-live="polite">
+        <h3>Your booking</h3>
+        <div class="row"><span>Set</span><b id="s-set">Not chosen</b></div>
+        <div class="row"><span>Length</span><b id="s-len">Not chosen</b></div>
+        <div class="row"><span>Rental fee</span><b id="s-fee">—</b></div>
+        <div class="due"><span id="s-dl">Reservation fee (50%)</span><strong id="s-dep">—</strong><small id="s-bal">Pay this to lock your date.</small></div>
+        <h4>Send your deposit to</h4>
+        <div class="pay" id="pay"></div>
+        <h4>After you pay</h4>
+        <ul><li>Message us a screenshot of your payment.</li><li>Send the PDF agreement you downloaded.</li><li>The balance is paid when the gear is delivered or picked up.</li></ul>
+      </aside>
     </div>
   </div>
 </section>
@@ -317,6 +485,278 @@ document.getElementById('vcf').addEventListener('click',function(){
   var v=['BEGIN:VCARD','VERSION:3.0','FN:MC JBL 520 Rental','ORG:JBL 520 Partybox Rental','TEL;TYPE=CELL:09077741399','EMAIL:jblmcrental@gmail.com','ADR:;;Virac;Catanduanes;;;','END:VCARD'].join('\r\n');
   var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([v],{type:'text/vcard'}));a.download='MC-JBL520.vcf';document.body.appendChild(a);a.click();a.remove();
 });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script>
+(function(){
+/* ============ EDIT THIS: prices, deposit and payment details ============ */
+var CFG={
+  // Rental fee in pesos. Leave as null until you decide (the site will say "ask us").
+  prices:{ basic:{half:null,whole:null}, plus:{half:null,whole:null} },
+  depositRate:0.5,          // 0.5 = half of the package price
+  lateFeePerHour:null,      // e.g. 100. Leave null to print a blank line on the PDF
+  payments:[                // shown next to the form. Replace with your real accounts
+    {method:'GCash',name:'Account name',number:'09XX XXX XXXX'},
+    {method:'Maya',name:'Account name',number:'09XX XXX XXXX'}
+  ]
+};
+/* ======================================================================== */
+
+var SETS={basic:{label:'JBL Basic',desc:'(speaker, 1 mic, stand)'},plus:{label:'JBL Plus',desc:'(full setup)'}};
+var LENS={half:{label:'Half day',hours:12},whole:{label:'Whole day',hours:24}};
+var FB='https://web.facebook.com/lindsey.araojo.12';
+var lateTxt=CFG.lateFeePerHour!=null?String(CFG.lateFeePerHour):'________';
+var RULES=[
+ ['1. Booking.','Your date is locked once we receive the reservation fee. The balance is paid when the gear is delivered or picked up.'],
+ ['2. Rental time.','Half day is 12 hours and whole day is 24 hours, counted from delivery or pick-up. Late returns are charged PHP '+lateTxt+' per extra hour.'],
+ ['3. Take care of it.','Use the gear only at the venue above. Keep it dry, away from rain, drinks and food, and out of the reach of children. Do not open, modify, lend or sub-rent it.'],
+ ['4. Damage or loss.','You pay for repair or replacement of anything damaged, lost or stolen while it is with you. We may take this from the deposit first.'],
+ ['5. Deposit.','Returned in full after we check the gear and everything is complete and working.'],
+ ['6. Check together.','We both go through the checklist below at hand-over and again at return. The signed checklist is our record of the gear\u2019s condition.']
+];
+var ITEMS=[
+ ['JBL PartyBox 520 speaker','Both','1'],['JBL wireless mic','Basic 1 / Plus 2','1-2'],['Speaker stand','Both','1'],
+ ['SkyWorth 32" Smart TV + remote','Plus','1'],['Platinum Karaoke Piano XL SD','Plus','1'],['Premium YouTube (account access)','Plus','1'],
+ ['LED spotlight + tripod','Plus','1'],['Power cords, chargers & cables','Both','all']
+];
+
+var $=function(id){return document.getElementById(id)};
+var form=$('rform'),start=$('f-st'),ret=$('f-rt'),evd=$('f-evd');
+var last=null;
+
+function val(n){var r=form.querySelector('input[name="'+n+'"]:checked');return r?r.value:''}
+function peso(n){return '\u20B1'+n.toLocaleString('en-PH',{minimumFractionDigits:n%1?2:0,maximumFractionDigits:2})}
+function money(n){return n.toLocaleString('en-PH',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function priceOf(s,l){return s&&l&&CFG.prices[s]&&CFG.prices[s][l]!=null?CFG.prices[s][l]:null}
+function pct(){return Math.round(CFG.depositRate*100)}
+function fdate(s){if(!s)return '';var p=s.split('-');return new Date(+p[0],p[1]-1,+p[2]).toLocaleDateString('en-PH',{year:'numeric',month:'long',day:'numeric'})}
+function fdt(s){return s?new Date(s).toLocaleString('en-PH',{year:'numeric',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}):''}
+function pad(n){return n<10?'0'+n:''+n}
+function localInput(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+'T'+pad(d.getHours())+':'+pad(d.getMinutes())}
+
+/* rules list on the page */
+$('rulesList').innerHTML=RULES.map(function(r){return '<p><strong>'+r[0]+'</strong> '+r[1]+'</p>'}).join('');
+
+/* payment details */
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+$('pay').innerHTML=CFG.payments.length?CFG.payments.map(function(p,i){
+  return '<div><div style="display:block;background:none;padding:0"><strong>'+esc(p.method)+' \u00B7 '+esc(p.number)+'</strong><span>'+esc(p.name)+'</span></div><button type="button" class="copy" data-i="'+i+'">Copy</button></div>';
+}).join(''):'<p class="n">Message us and we will send you our payment details.</p>';
+$('pay').addEventListener('click',function(e){
+  var b=e.target.closest('.copy');if(!b)return;
+  var txt=CFG.payments[b.dataset.i].number.replace(/\s+/g,'');
+  var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1400)};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,done)}else{done()}
+});
+
+/* live summary */
+function refresh(){
+  var s=val('set'),l=val('len'),p=priceOf(s,l);
+  $('s-set').textContent=s?SETS[s].label:'Not chosen';
+  $('s-len').textContent=l?LENS[l].label+' ('+LENS[l].hours+' hrs)':'Not chosen';
+  $('s-dl').textContent='Reservation fee ('+pct()+'%)';
+  if(p!=null){
+    $('s-fee').textContent=peso(p);
+    $('s-dep').textContent=peso(p*CFG.depositRate);
+    $('s-bal').textContent='Pay this to lock your date. Balance of '+peso(p-p*CFG.depositRate)+' on delivery / pick-up.';
+  }else{
+    $('s-fee').textContent=(s&&l)?'Ask us':'\u2014';
+    $('s-dep').textContent=(s&&l)?pct()+'% of the fee':'\u2014';
+    $('s-bal').textContent=(s&&l)?'Message us for the exact rate. The reservation fee is '+pct()+'% of it.':'Choose a set and length to see your reservation fee.';
+  }
+  ['basic','plus'].forEach(function(k){
+    var q=priceOf(k,l||'half'),el=document.querySelector('[data-ps="'+k+'"]');
+    el.textContent=q!=null?peso(q)+(l?'':' (half day)'):'';
+  });
+  document.querySelectorAll('.card .rate>span').forEach(function(sp,i){
+    var q=priceOf(i?'plus':'basic',$('sw').dataset.on==='1'?'whole':'half');
+    if(q!=null)sp.textContent='Rate: '+peso(q);
+  });
+}
+function autoReturn(){
+  if(ret.dataset.touched)return;
+  var l=val('len');if(!start.value||!l)return;
+  var d=new Date(start.value);d.setHours(d.getHours()+LENS[l].hours);ret.value=localInput(d);checkRet();
+}
+function checkRet(){
+  ret.setCustomValidity(ret.value&&start.value&&new Date(ret.value)<=new Date(start.value)?'The return time must be after the delivery / pick-up time.':'');
+}
+ret.addEventListener('input',function(){ret.dataset.touched='1';checkRet()});
+start.addEventListener('input',function(){autoReturn();checkRet()});
+form.addEventListener('change',function(e){
+  if(e.target.name==='len')autoReturn();
+  refresh();
+});
+$('sw').addEventListener('click',function(){setTimeout(refresh,0)});
+(function(){var t=new Date();evd.min=t.getFullYear()+'-'+pad(t.getMonth()+1)+'-'+pad(t.getDate());start.min=evd.min+'T00:00'})();
+
+/* package buttons in the "Pick your set" section preselect the form */
+document.querySelectorAll('.card .btn').forEach(function(a,i){
+  a.textContent=i?'Reserve Plus':'Reserve Basic';
+  a.setAttribute('href','#reserve');a.removeAttribute('target');a.removeAttribute('rel');
+  a.addEventListener('click',function(){
+    var s=i?'plus':'basic',l=$('sw').dataset.on==='1'?'whole':'half';
+    form.querySelector('input[name="set"][value="'+s+'"]').checked=true;
+    form.querySelector('input[name="len"][value="'+l+'"]').checked=true;
+    autoReturn();refresh();
+  });
+});
+
+/* ---------------- PDF ---------------- */
+function clean(s){
+  return String(s==null?'':s).replace(/[\s\u202f]+/g,' ').replace(/[\u2018\u2019]/g,"'").replace(/[\u201C\u201D]/g,'"').replace(/[\u2013\u2014]/g,'-').replace(/\u2026/g,'...').replace(/[^\x20-\x7E\u00A1-\u00FF]/g,'').trim();
+}
+function loadLogo(){
+  return new Promise(function(res,rej){
+    var im=document.querySelector('.logo');
+    function go(){try{var c=document.createElement('canvas');c.width=im.naturalWidth;c.height=im.naturalHeight;c.getContext('2d').drawImage(im,0,0);res({data:c.toDataURL('image/png'),w:c.width,h:c.height})}catch(e){rej(e)}}
+    if(im.complete&&im.naturalWidth)go();else{im.onload=go;im.onerror=rej}
+  });
+}
+function buildPdf(d,logo){
+  var J=window.jspdf.jsPDF,doc=new J({unit:'pt',format:'a4'});
+  var W=595.28,M=40,CW=W-2*M;
+  var OR=[255,75,31],INK=[13,13,16],GR=[110,110,120],LN=[205,205,212];
+  function tc(c){doc.setTextColor(c[0],c[1],c[2])}
+  function dc(c){doc.setDrawColor(c[0],c[1],c[2])}
+  function fc(c){doc.setFillColor(c[0],c[1],c[2])}
+  function font(b,s){doc.setFont('helvetica',b?'bold':'normal');doc.setFontSize(s)}
+
+  /* header */
+  var lh=40,lw=logo.w/logo.h*lh;
+  doc.addImage(logo.data,'PNG',M,26,lw,lh);
+  font(1,22);tc(INK);doc.text('Rental Agreement',W-M,50,{align:'right'});
+  font(0,8);tc(GR);doc.text('Virac, Catanduanes  |  0907 774 1399  |  jblmcrental@gmail.com',W-M,63,{align:'right'});
+  dc(OR);doc.setLineWidth(1.6);doc.line(M,76,W-M,76);
+
+  function rich(runs,x,y,w,size,lead){
+    font(0,size);var sp=doc.getTextWidth(' '),words=[];
+    runs.forEach(function(r){r[0].split(/\s+/).filter(Boolean).forEach(function(t){words.push({t:t,b:r[1]})})});
+    var lines=[],line=[],cw=0;
+    words.forEach(function(wd){
+      font(wd.b,size);var ww=doc.getTextWidth(wd.t);
+      if(line.length&&cw+sp+ww>w){lines.push(line);line=[];cw=0}
+      cw+=(line.length?sp:0)+ww;line.push({t:wd.t,b:wd.b,w:ww});
+    });
+    if(line.length)lines.push(line);
+    lines.forEach(function(l,i){var cx=x;l.forEach(function(wd){font(wd.b,size);tc(INK);doc.text(wd.t,cx,y+i*lead);cx+=wd.w+sp})});
+    return y+lines.length*lead;
+  }
+  function head(t,y){font(1,9.5);tc(OR);doc.text(t,M,y)}
+  function field(label,v,x,y,w,lblw){
+    font(1,8);tc(GR);doc.text(label,x,y);
+    var vx=x+lblw,vw=w-lblw;
+    dc(LN);doc.setLineWidth(.6);doc.line(vx,y+4,x+w,y+4);
+    v=clean(v);if(!v)return;
+    tc(INK);var s=9.5;font(0,s);
+    while(s>6.5&&doc.getTextWidth(v)>vw-4){s-=.5;doc.setFontSize(s)}
+    if(doc.getTextWidth(v)>vw-4){doc.setFontSize(6.5);doc.text(doc.splitTextToSize(v,vw-4).slice(0,2),vx+2,y-4,{lineHeightFactor:1.05})}
+    else doc.text(v,vx+2,y);
+  }
+  function box(x,y,on){
+    dc(INK);doc.setLineWidth(.8);doc.rect(x,y-7.5,8.5,8.5);
+    if(on){dc(OR);doc.setLineWidth(1.6);doc.line(x+1.8,y-3.4,x+3.8,y-1.2);doc.line(x+3.8,y-1.2,x+7.4,y-6.2)}
+  }
+
+  var y=96;
+  y=rich([['This agreement is between ',0],['MC - JBL 520 Partybox Rental',1],[' ("we") and the renter named below ("you"). In short: we lend you the gear, you take good care of it and bring it back on time and in the same condition.',0]],M,y,CW,9,11.5);
+
+  /* 1 */
+  y+=8;head('1. RENTER AND EVENT',y);y+=22;
+  var C1=M,C2=M+265,CWD=250,LB=98,RH=22;
+  field('Renter name',d.name,C1,y,CWD,LB);field('Contact no.',d.phone,C2,y,CWD,LB);y+=RH;
+  field('Address / Facebook',d.address,C1,y,CWD,LB);field('Valid ID (type & no.)',d.idType+' - '+d.idNo,C2,y,CWD,LB);y+=RH;
+  field('Event',d.event,C1,y,CWD,LB);field('Event date',fdate(d.eventDate),C2,y,CWD,LB);y+=RH;
+  field('Venue',d.venue,C1,y,CWD,LB);field('Delivery / pick-up',d.mode+', '+fdt(d.start),C2,y,CWD,LB);y+=RH;
+  field('Return date & time',fdt(d.ret),C1,y,CWD,LB);field('Delivered / picked up by','',C2,y,CWD,LB);
+
+  /* 2 */
+  y+=26;head('2. PACKAGE AND FEES',y);y+=19;
+  font(1,8);tc(GR);doc.text('Set',M,y);
+  ['basic','plus'].forEach(function(k,i){var x=M+62+i*236;box(x,y,d.set===k);rich([[SETS[k].label,1],[' '+SETS[k].desc,0]],x+14,y,220,9,11)});
+  y+=19;font(1,8);tc(GR);doc.text('Length',M,y);
+  ['half','whole'].forEach(function(k,i){var x=M+62+i*236;box(x,y,d.len===k);rich([[LENS[k].label,1],[' ('+LENS[k].hours+' hours)',0]],x+14,y,220,9,11)});
+  y+=24;
+  field('Rental fee (PHP)',d.fee!=null?money(d.fee):'',C1,y,CWD,LB);
+  field('Reservation fee (PHP)',d.dep!=null?money(d.dep):'',C2,y,CWD,LB);
+
+  /* 3 */
+  y+=28;head('3. RULES',y);y+=15;
+  RULES.forEach(function(r){y=rich([[r[0],1],[' '+r[1],0]],M,y,CW,8.5,11)+3.5});
+
+  /* 4 */
+  y+=8;head('4. EQUIPMENT AUDIT CHECKLIST',y);y+=8;
+  var cols=[190,80,34,72,68,71],xs=[M];cols.forEach(function(w,i){xs.push(xs[i]+w)});
+  var HH=26;fc([241,241,244]);doc.rect(M,y,CW,HH,'F');
+  font(1,7.6);tc(INK);
+  doc.text('Item',xs[0]+6,y+16);doc.text('Set',xs[1]+6,y+16);doc.text('Qty',xs[2]+6,y+16);
+  doc.text('OUT: complete &',xs[3]+6,y+11);doc.text('working',xs[3]+6,y+20);
+  doc.text('IN: complete &',xs[4]+6,y+11);doc.text('working',xs[4]+6,y+20);
+  doc.text('Notes / damage',xs[5]+6,y+16);
+  dc(INK);doc.setLineWidth(1);doc.line(M,y+HH,W-M,y+HH);
+  y+=HH;var RW=20;
+  ITEMS.forEach(function(it){
+    font(0,8.3);tc(INK);doc.text(it[0],xs[0]+6,y+13);doc.text(it[1],xs[1]+6,y+13);doc.text(it[2],xs[2]+6,y+13);
+    box(xs[3]+cols[3]/2-4,y+14.5,false);box(xs[4]+cols[4]/2-4,y+14.5,false);
+    dc(LN);doc.setLineWidth(.6);doc.line(M,y+RW,W-M,y+RW);y+=RW;
+  });
+  dc(LN);doc.setLineWidth(.6);
+  for(var i=1;i<cols.length;i++){doc.line(xs[i],y-RW*ITEMS.length,xs[i],y)}
+  doc.line(M,y-RW*ITEMS.length-HH,M,y);doc.line(W-M,y-RW*ITEMS.length-HH,W-M,y);
+
+  /* signatures */
+  var sy=Math.max(y+50,0);if(sy>796)sy=796;
+  dc(INK);doc.setLineWidth(.9);
+  doc.line(M,sy,M+235,sy);doc.line(M+280,sy,W-M,sy);
+  font(0,7.6);tc(GR);
+  doc.text("Renter's signature over printed name / date",M,sy+11);
+  doc.text('MC - JBL 520 Partybox Rental, signature / date',M+280,sy+11);
+  font(1,9);tc(INK);doc.text(clean(d.name).toUpperCase(),M,sy+23);
+
+  font(0,7);tc(GR);
+  doc.text('Reference '+d.ref+'  |  Filled in online on '+new Date().toLocaleDateString('en-PH',{year:'numeric',month:'long',day:'numeric'}),M,825);
+  return doc;
+}
+
+function collect(){
+  var f=new FormData(form),g=function(k){return (f.get(k)||'').toString().trim()};
+  var s=g('set'),l=g('len'),p=priceOf(s,l),n=new Date();
+  return {
+    name:g('name'),phone:g('phone'),address:g('address'),idType:g('idType'),idNo:g('idNo'),
+    event:g('event'),eventDate:g('eventDate'),venue:g('venue'),mode:g('mode'),start:g('start'),ret:g('ret'),
+    set:s,len:l,fee:p,dep:p!=null?p*CFG.depositRate:null,
+    ref:'MC-'+String(n.getFullYear()).slice(2)+pad(n.getMonth()+1)+pad(n.getDate())+'-'+Math.random().toString(16).slice(2,6).toUpperCase()
+  };
+}
+function fname(d){return 'JBL520-Rental-Agreement-'+(clean(d.name).replace(/[^A-Za-z0-9]+/g,'-').replace(/^-|-$/g,'')||'Renter')+'.pdf'}
+
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+  var err=$('ferr'),btn=$('fgo'),lab=btn.querySelector('span');err.textContent='';
+  if(!window.jspdf){err.textContent='The PDF tool could not load. Please check your internet connection and try again.';return}
+  var d=collect();btn.disabled=true;lab.textContent='Making your PDF\u2026';
+  loadLogo().then(function(logo){
+    var doc=buildPdf(d,logo);
+    last={doc:doc,name:fname(d),d:d};
+    doc.save(last.name);
+    showDone(d);
+  }).catch(function(ex){
+    console.error(ex);err.textContent='Something went wrong while making the PDF. Please try again.';
+  }).then(function(){btn.disabled=false;lab.textContent='Get my agreement (PDF)'});
+});
+
+function showDone(d){
+  $('doneRef').textContent='Reference '+d.ref;
+  var body=['Hi! I just reserved a JBL 520 rental on your website.','','Reference: '+d.ref,'Name: '+d.name,'Event: '+d.event+' on '+fdate(d.eventDate),'Venue: '+d.venue,'Set: '+SETS[d.set].label+', '+LENS[d.len].label,d.dep!=null?'Reservation fee paid: PHP '+money(d.dep):'','','I will attach my payment screenshot and the agreement PDF.'].join('\n');
+  $('mailLink').href='mailto:jblmcrental@gmail.com?subject='+encodeURIComponent('JBL 520 rental reservation '+d.ref)+'&body='+encodeURIComponent(body);
+  form.hidden=true;$('done').hidden=false;
+  $('fcard').scrollIntoView({behavior:'smooth',block:'start'});
+}
+$('again').addEventListener('click',function(){if(last)last.doc.save(last.name)});
+$('edit').addEventListener('click',function(){$('done').hidden=true;form.hidden=false;$('fcard').scrollIntoView({behavior:'smooth',block:'start'})});
+
+refresh();
+})();
 </script>
 </body>
 </html>
